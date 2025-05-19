@@ -50,7 +50,13 @@ export const DATA = {
 
         navbar: true,
       },
+      DownloadPDF: {
+        name: "Download PDF",
+        url: "/pdf/CV HUYNH HUU NGHIA.pdf",
+        icon: Icons.download,
 
+        navbar: true,
+      },
       email: {
         name: "Send Email",
         url: "mailto:nghiabatuoidev@gmail.com",

@@ -1,11 +1,12 @@
-import { GlobeIcon, MailIcon, Phone } from "lucide-react";
+import { ArrowDownToLine, GlobeIcon, MailIcon, Phone } from "lucide-react";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   globe: (props: IconProps) => <GlobeIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
-  phone: (props: IconProps) => <Phone {...props} />,
+  download: (props: IconProps) => <ArrowDownToLine {...props} />,
+
   linkedin: (props: IconProps) => (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>LinkedIn</title>
