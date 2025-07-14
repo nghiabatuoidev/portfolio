@@ -30,6 +30,7 @@ export const DATA = {
     "MongoDb",
     "Docker",
     "Redis",
+    "Agile/Scrum",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -69,17 +70,41 @@ export const DATA = {
 
   work: [
     {
+      company:
+        "Becamex IDC Corporation – Industrial Investment and Development Corporation",
+      href: "https://becamex.com.vn/gioi-thieu/",
+      badges: [],
+      location: "Remote",
+      title: "Software Developer Intern",
+      logoUrl: "/logo-becamex.png",
+      start: "June 2025",
+      end: "August 2025",
+      description:
+        "Joined the software development team as an intern. Contributed to maintaining and developing internal company systems. Worked in an Agile/Scrum environment under the guidance of senior developers.",
+      responsibilities: [
+        "Attended daily stand-ups to report progress and blockers",
+        "Participated in sprint planning to estimate and assign tasks",
+        "Joined sprint reviews to demo completed features and gather feedback",
+        "Took part in retrospectives to improve team performance",
+        "Collaborated with Scrum Master and team members to deliver sprint goals",
+        "Applied Scrum practices throughout the development cycle",
+      ],
+      technologies: "C#, .Net core API, Nextjs, SQL Server, TailwindCSS",
+      online: "https://becamex.com.vn",
+      source: "",
+    },
+    {
       company: "Online Chat Web",
       href: "",
       badges: [],
-      location: "Remote",
+      location: "On-site",
       title: "Personal Project",
       logoUrl: "/atomic.png",
       start: "October 2023",
       end: "December 2023",
       description:
         "Develop a real-time messaging application similar to Zalo. Implement core features such as text messaging, posting, connecting friends, creating groups.",
-      responsibilities: "",
+      responsibilities: [],
       technologies: "C#, .Net core MVC, SignalR, Mongodb,TaiwindCSS.",
       source: "https://github.com/nghiabatuoidev/webchat-netcoremvc-signal.git",
       online: "",
@@ -95,7 +120,7 @@ export const DATA = {
       end: "April 2024",
       description:
         "A movie streaming website where users canbrowse and watch movies.",
-      responsibilities: "",
+      responsibilities: [],
       technologies:
         "Next.js, ShadCN/UI, Tailwind CSS, Redux Toolkit, API integration, Redis, Docker.",
       source: "",
@@ -111,9 +136,13 @@ export const DATA = {
       start: "January 2025",
       end: "April 2025",
       description:
-        "Online typing practice website supports multiple languages. ",
-      responsibilities:
-        "Collect and analyze user requirements and market data. Define system requirements, data flows, and user interactions. Design system architecture, data models, APIs, and technology stack. Develop a responsive, user-friendly, multilingual interface.",
+        "Online typing practice website supports multiple languages.",
+      responsibilities: [
+        "Collected and analyzed user requirements and market data",
+        "Defined system requirements, data flows, and user interactions",
+        "Designed system architecture, data models, APIs, and technology stack",
+        "Developed a responsive, user-friendly, multilingual interface",
+      ],
       technologies:
         "Typescript, Nextjs, Redux, Hook, TaiwindCSS, Shadcn/ui, .Net core API, C#, PosgreSQL, Docker.",
       source: "https://github.com/nghiabatuoidev/typingfast-nextjs.git",
@@ -191,6 +220,31 @@ export const DATA = {
       ],
       image: "",
       video: "/videos/demo2.mp4",
+    },
+    {
+      title: "Download TikTok Video Without Watermark",
+      href: "https://snaptikz.pro",
+      dates: "June 2025 - August  2025",
+      active: true,
+      description:
+        "Online tool for downloading TikTok videos without watermark.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Docker",
+        "Cloudflare",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://snaptikz.pro",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/videos/demo3.mp4",
     },
   ],
   hackathons: [

@@ -18,7 +18,7 @@ interface ResumeCardProps {
   badges?: readonly string[];
   period: string;
   description?: string;
-  responsibilities?: string;
+  responsibilities?: readonly string[];
   technologies?: string;
   source?: string;
   online?: string;
@@ -51,6 +51,7 @@ export const ResumeCard = ({
       href={href || "#"}
       className="block cursor-pointer"
       onClick={handleClick}
+      target="_blank"
     >
       <Card className="flex">
         <div className="flex-none">
@@ -111,12 +112,11 @@ export const ResumeCard = ({
               {description}
             </motion.div>
           )}
-          {responsibilities && (
+          {responsibilities && responsibilities.length > 0 && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
                 opacity: isExpanded ? 1 : 0,
-
                 height: isExpanded ? "auto" : 0,
               }}
               transition={{
@@ -125,8 +125,12 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm text-primary/90"
             >
-              <span className="font-medium">Responsibilities: </span>
-              {responsibilities}
+              <span className="font-medium">Responsibilities:</span>
+              <ul className="list-disc list-inside mt-1 space-y-1">
+                {responsibilities.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </motion.div>
           )}
 
