@@ -213,7 +213,7 @@ export default function Page() {
                 <Phone /> <span> 0356014688</span>
               </p>
               <p className="flex justify-center gap-2 items-center max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                <Mail /> <span> nghiabatuoidev@gmail.com</span>
+                <Mail /> <span>2124801030199@student.tdmu.edu.vn</span>
               </p>
             </div>
           </BlurFade>
