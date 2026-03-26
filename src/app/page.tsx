@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import { Mail, Phone } from "lucide-react";
+import Link from "next/link";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -147,7 +148,6 @@ export default function Page() {
                   dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
-                  video={project.video}
                   links={project.links}
                 />
               </BlurFade>
@@ -210,10 +210,21 @@ export default function Page() {
                 review my CV.
               </h2>
               <p className="flex justify-center gap-2 items-center max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                <Phone /> <span> 0356014688</span>
+                <Phone />
+                <Link href="tel:0356014688" className="hover:underline">
+                  0356014688
+                </Link>
               </p>
               <p className="flex justify-center gap-2 items-center max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                <Mail /> <span>2124801030199@student.tdmu.edu.vn</span>
+                <Mail />
+                <Link
+                  href="https://mail.google.com/mail/?view=cm&to=huynhhuunghia.dev@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  huynhhuunghia.dev@gmail.com
+                </Link>
               </p>
             </div>
           </BlurFade>
